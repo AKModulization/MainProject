@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	self.view.backgroundColor = UIColor.purpleColor;
+	self.title = NSStringFromClass(self.class);
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+	[super touchesBegan:touches withEvent:event];
+	[self.navigationController pushViewController:AViewController.new animated:YES];
+}
 
 @end
