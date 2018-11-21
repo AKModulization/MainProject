@@ -24,6 +24,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 	[super touchesBegan:touches withEvent:event];
+	///跳转至业务A
 	UIViewController *AVC = [CTMediator.sharedInstance A_aViewController];
 	[self.navigationController pushViewController:AVC animated:YES];
 }
