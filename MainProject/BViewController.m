@@ -18,7 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 	self.view.backgroundColor = UIColor.yellowColor;
-	self.title = NSStringFromClass(self.class);
+}
+
+- (instancetype)initWithContentText:(NSString *)content {
+	self = [super init];
+	if (self) {
+		self.title = content;
+	}
+	return self;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

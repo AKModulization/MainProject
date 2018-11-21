@@ -1,8 +1,8 @@
 //
-//  AViewController.h
+//  Target_B.h
 //  MainProject
 //
-//  Created by EricLau on 2018/11/20.
+//  Created by EricLau on 2018/11/21.
 //  Copyright © 2018年 Anker. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AViewController : UIViewController
+@interface Target_B : NSObject
 
 @end
 

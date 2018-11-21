@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AViewController.h"
+#import <A_Category/CTMediator+A.h>
 
 @interface ViewController ()
 
@@ -24,7 +24,8 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 	[super touchesBegan:touches withEvent:event];
-	[self.navigationController pushViewController:AViewController.new animated:YES];
+	UIViewController *AVC = [CTMediator.sharedInstance A_aViewController];
+	[self.navigationController pushViewController:AVC animated:YES];
 }
 
 @end

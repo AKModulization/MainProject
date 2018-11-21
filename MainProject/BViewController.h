@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BViewController : UIViewController
 
+- (instancetype)initWithContentText:(NSString *)content;
+
 @end
 
 NS_ASSUME_NONNULL_END
